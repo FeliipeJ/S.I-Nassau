@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="shortcut icon" href="img2/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Scripts -->
+    <script src="js/scripts.js" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header id="header-contato">
+        <div id="inner-header">
+          <h2 class="bi bi-airplane" id="brand"> Viagem Nassau</h2>
+            <a href="inicio.html">Início</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="time.html">Time</a>
+            <a href="avaliacao.html">Avaliações</a>
+            <a href="#contact">Contato</a>
+          
+          <!-- Menu Mobile -->
+          <i class="bi bi-list" id="menu"></i>
+          <nav id="mobile-navbar">
+            <i class="bi bi-x-lg" id="close-menu"></i>
+            <a href="inicio.html">Início</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="time.html">Time</a>
+            <a href="avaliacao.html">Avaliações</a>
+            <a href="#contact">Contato</a>
+          </nav>
+        </div>
+        <div class="banner active">
+          <span class="square"></span>
+          <h2>Melhores experts em direito do país</h2>
+          <p>
+            Os advogados mais bem qualificados estão aqui, agende uma reunião e
+            conheça nosso time
+          </p>
+        </div>
+        <div class="banner">
+          <span class="square"></span>
+          <h2>Conheça o nosso time</h2>
+          <p>
+            Veja as especialidades dos nossos advogados, e entenda como eles podem
+            lhe ajudar
+          </p>
+        </div>
+        <div class="banner">
+          <span class="square"></span>
+          <h2>Os nossos resultados</h2>
+          <p>
+            Confira as nossas métricas e conheça os resultados que já obtivemos
+          </p>
+        </div>
+        <div class="dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </header>
+
+    <section id="contact" class="text-image-section">
+        <div id="contact-image-container" class="image-container">
+          <img src="img2/sassy-african.jpg" alt="Os Clientes" />
+        </div>
+        <div id="contact-information" class="text-container">
+          <i class="bi bi-envelope"></i>
+          <p class="section-subtitle">Entre em contato</p>
+          <form>
+            <div class="form-control">
+              <input type="text" name="name" id="name" placeholder="Nome" />
+              <input type="email" name="email" id="email" placeholder="E-mail" />
+            </div>
+            <input type="text" name="phone" id="phone" placeholder="Telefone" />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Sua mensagem..."
+            ></textarea>
+            <input type="button" onclick="EnviarMensagem()" value="Enviar" class="btn"/>
+          </form>
+        </div>
+      </section>
+
+      <footer id="footer">
+        <div class="contact-info">
+          <div class="footer-brand">
+            <h2>Viagem Nassau</h2>
+            <p>A viagem certa para você</p>
+          </div>
+          <p><i class="bi bi-geo-alt"></i> Rua das vigens, 1415</p>
+          <p><i class="bi bi-telephone"></i> (99) 9999-9999</p>
+          <p><i class="bi bi-envelope"></i> contato@viagemnassau.com</p>
+          <div class="social-networks">
+            <p>Siga-nos:</p>
+            <div class="networks">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="links-container">
+          <h4>Outros serviços</h4>
+          <nav>
+            <a href="#">Minhas Viagens</a>
+            <a href="#">Dicas de Segurança</a>
+            <a href="#">Status do Voo</a>
+            <a href="#">Trabalhe Conosco</a>
+          </nav>
+        </div>
+        <div class="links-container">
+          <h4>Páginas</h4>
+          <nav>
+            <a href="#">Termos e condições</a>
+            <a href="#">Política de privacidade</a>
+            <a href="#">Fale com um especialista</a>
+            <a href="#">Central de Ajuda</a>
+          </nav>
+        </div>
+        <div class="links-container">
+          <h4>Consulta grátis</h4>
+          <div class="phone-number">
+            <i class="bi bi-telephone"></i>
+            <p>(99) 9999-9999</p>
+          </div>
+          <p class="phone-info">
+            Este telefone é especial para tratar de conversas já em andamento
+          </p>
+        </div>
+      </footer>
+</body>
+</html>

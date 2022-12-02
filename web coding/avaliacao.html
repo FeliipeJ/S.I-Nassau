@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliações</title>
+    <link rel="shortcut icon" href="img2/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Scripts -->
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header id="header-avaliacao">
+        <div id="inner-header">
+            <h2 class="bi bi-airplane" id="brand"> Viagem Nassau</h2>
+            <a href="inicio.html">Início</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="#about">Sobre</a>
+            <a href="time.html">Time</a>
+            <a href="#">Avaliações</a>
+            <a href="contato.html">Contato</a>
+          
+          <!-- Menu Mobile -->
+          <i class="bi bi-list" id="menu"></i>
+          <nav id="mobile-navbar">
+            <i class="bi bi-x-lg" id="close-menu"></i>
+            <a href="inicio.html">Início</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="time.html">Time</a>
+            <a href="#">Avaliações</a>
+            <a href="contato.html">Contato</a>
+          </nav>
+        </div>
+        <div class="banner active">
+          <span class="square"></span>
+          <h2>As Melhores Viagens você só encontra aqui</h2>
+          <p>
+            Viagem Nassau, a viagem certa para você.
+          </p>
+        </div>
+        <div class="banner">
+          <span class="square"></span>
+          <h2>Veja as avaliações do nossos clientes</h2>
+          <p>
+            ...
+          </p>
+        </div>
+        <div class="banner">
+          <span class="square"></span>
+          <h2>A Viagem certa para você</h2>
+        </div>
+        <div class="dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </header>
+
+      <section id="testimonials" class="text-image-section">
+        <div id="testimonial-information" class="text-container">
+          <p class="section-subtitle">Depoimentos de clientes</p>
+          <h3 class="section-title">
+            A Viagem Nassau fez parte de um dos meus sonhos que era conhecer outros países, recomendo a todos.
+          </h3>
+          <div class="author">
+            <div class="author-info">
+              <p class="author-name">Marcos Goes</p>
+              <p class="author-job">Recife/PE</p>
+            </div>
+            <img src="img2/ft1.jpg" alt="Marcos" />
+          </div>
+          <h3 class="section-title">
+            A melhor agência de viagem que eu já viajei, conseguimos conhecer vários lugares através de seus planos excelentes.
+          </h3>
+          <div class="author">
+            <div class="author-info">
+              <p class="author-name">Laura F.</p>
+              <p class="author-job">São Paulo/SP</p>
+            </div>
+            <img src="img2/ft2.jpg" alt="Laura" />
+          </div>
+        </div>
+        <div id="testimonial-image-container" class="image-container">
+          <i class="bi bi-quote"></i>
+          <img src="img2/happy-famele.jpg" alt="Turista" />
+        </div>
+      </section>
+
+      <div id="container">
+        <div>
+            <h1 class="title">Avaliação</h1>
+        </div>
+        <div>
+            <form class="tipsForm" id="tipsForm">
+                <label for="bill">
+                    <p>Deixe aqui a sua avaliação</p>
+                </label>
+                <p>
+                    Seu nome: <input type="text" placeholder="digite aqui..." name="bill" id="bill" class="formInput" required>
+                </p>
+                <label for="serviceQual">
+                    <p>Como foi sua experiência?</p>
+                </label>
+                <select name="serviceQual" id="serviceQual" class="formInput1">
+                    <option disabled selected>Escolha uma Opção</option>
+                    <option value="0.3">Incrível</option>
+                    <option value="0.2">Bom</option>
+                    <option value="0.15">Aceitável</option>
+                    <option value="0.1">Ruim</option>
+                    <option value="0.05">Péssimo</option>
+                </select>
+                <label for="people">
+                    <p>Você indicaria para um amigo?</p>
+                </label>
+                <p>
+                    <input type="radio" name="people" id="people" class="formInput" required>Sim.
+                </p>
+                <p>
+                    <input type="radio" name="people" id="people" class="formInput" required>Não.
+                </p>
+                <button type="submit" class="formSubmit" onclick='AgradecerAv("Agradecemos a Avaliação")'>Enviar</button>
+            </form>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </div>
+
+      <footer id="footer">
+        <div class="contact-info">
+          <div class="footer-brand">
+            <h2>Viagem Nassau</h2>
+            <p>A viagem certa para você</p>
+          </div>
+          <p><i class="bi bi-geo-alt"></i> Rua das vigens, 1415</p>
+          <p><i class="bi bi-telephone"></i> (99) 9999-9999</p>
+          <p><i class="bi bi-envelope"></i> contato@viagemnassau.com</p>
+          <div class="social-networks">
+            <p>Siga-nos:</p>
+            <div class="networks">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="links-container">
+          <h4>Outros serviços</h4>
+          <nav>
+            <a href="#">Minhas Viagens</a>
+            <a href="#">Dicas de Segurança</a>
+            <a href="#">Status do Voo</a>
+            <a href="#">Trabalhe Conosco</a>
+          </nav>
+        </div>
+        <div class="links-container">
+          <h4>Páginas</h4>
+          <nav>
+            <a href="#">Termos e condições</a>
+            <a href="#">Política de privacidade</a>
+            <a href="#">Fale com um especialista</a>
+            <a href="#">Central de Ajuda</a>
+          </nav>
+        </div>
+        <div class="links-container">
+          <h4>Consulta grátis</h4>
+          <div class="phone-number">
+            <i class="bi bi-telephone"></i>
+            <p>(99) 9999-9999</p>
+          </div>
+          <p class="phone-info">
+            Este telefone é especial para tratar de conversas já em andamento
+          </p>
+        </div>
+      </footer>
+</body>
+</html>
